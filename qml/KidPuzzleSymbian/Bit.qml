@@ -1,7 +1,7 @@
 // import QtQuick 1.0 // to target S60 5th Edition or Maemo 5
 import QtQuick 1.0
 import "UI.js" as UI
-import QtMultimediaKit 1.1
+//import QtMultimediaKit 1.1
 
 Image {
     id: aBit
@@ -20,6 +20,7 @@ Image {
             return false
         }
     }
+    /*
 
     SoundEffect {
         id: placeBit
@@ -37,7 +38,7 @@ Image {
         id: applause
         source: "app-6.wav"; muted: false; volume: 1.0
     }
-
+*/
 
     Component.onCompleted: {
         width = dockW; height = dockH; x = dockX; y = dockY
@@ -64,7 +65,7 @@ Image {
             if (free) {
                 aBit.width = aBit.sourceSize.width
                 aBit.height = aBit.sourceSize.height
-                takeBit.play()
+                // SOUND takeBit.play()
                 aBit.z = aBit.z + 100
             }
         }
@@ -74,17 +75,17 @@ Image {
                 if (closeEnough(aBit.x, aBit.y, aBit.boardX, aBit.boardY)) {
                     free = false
                     blinkBit.running = true
-                    placeBit.play()
+                    // SOUND placeBit.play()
                     UI.bitDone()
                     aBit.x = boardX
                     aBit.y = boardY
                     drag.target = undefined
                     if (UI.finished()) {
-                        applause.play()
+                        // SOUNDapplause.play()
                         gameover = true
                     }
                 } else {
-                    returnBit.play()
+                    // SOUND returnBit.play()
                     aBit.width = dockW
                     aBit.height = dockH
                     aBit.x = dockX

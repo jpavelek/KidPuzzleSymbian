@@ -23,9 +23,9 @@ function finished() {
 }
 
 //Common
-var screenWidth = 854;
-var screenHeight = 480;
-var leftMargin = 54; //how  big margin for 800x480 game? On 854 screen it is 54
+var screenWidth = 640;
+var screenHeight = 360;
+var leftMargin = 40; //how  big margin for 800x480 game? On 854 screen it is 54
 
 //main grid
 var gridCellWidth = 350;
@@ -41,4 +41,4 @@ var nrBaloons = 15;
 var seedTime = 10000;
 var baloonColors = ["baloon_red.png", "baloon_green.png", "baloon_yellow.png", "baloon_blue.png"];
 var nrColors = 4;
-var boardWidth = 800;
+var boardWidth = 600;

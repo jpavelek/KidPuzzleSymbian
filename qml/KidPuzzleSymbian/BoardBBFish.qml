@@ -6,23 +6,23 @@ Board {
 
     Bit {
         source: "bbf_tail.png"
-        dockX: UI.leftMargin + 30; dockY:10; boardX: UI.leftMargin + 128; boardY: 1; dockW: 55; dockH: 90
+        dockX: UI.leftMargin + 15; dockY:0; boardX: UI.leftMargin + 97; boardY: 1; dockW: 55; dockH: 65
     }
     Bit {
         source: "bbf_head.png"
-        dockX: UI.leftMargin + 10; dockY: 110; boardX: UI.leftMargin + 480; boardY: UI.screenHeight - 245; dockW: 104; dockH: 80
+        dockX: UI.leftMargin + 2; dockY: 75; boardX: UI.leftMargin + 361; boardY: 176; dockW: 90; dockH: 65
     }
     Bit {
         source: "bbf_fin.png"
-        dockX: UI.leftMargin + 10; dockY: 210; boardX: UI.leftMargin + 128; boardY: 0; dockW: 96; dockH: 80
+        dockX: UI.leftMargin + 2; dockY: 150; boardX: UI.leftMargin + 97; boardY: 0; dockW: 90; dockH: 65
     }
     Bit {
         source: "bbf_belly.png"
-        dockX: UI.leftMargin + 10; dockY: 310; boardX: UI.leftMargin + 230; boardY: UI.screenHeight - 250; dockW: 100; dockH: 70
+        dockX: UI.leftMargin + 2; dockY: 225; boardX: UI.leftMargin + 173; boardY: 172; dockW: 90; dockH: 65
     }
     Bit {
         source: "bbf_forehead.png"
-        dockX: UI.leftMargin + 10; dockY: 400; boardX: UI.leftMargin + 479; boardY: 0; dockW: 100; dockH: 73
+        dockX: UI.leftMargin + 2; dockY: 295; boardX: UI.leftMargin + 361; boardY: 0; dockW: 90; dockH: 65
     }
 }
 

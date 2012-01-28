@@ -6,22 +6,22 @@ Board {
 
     Bit {
         source: "redfish_mid.png"
-        dockX: UI.leftMargin + 15; dockY:10; boardX: UI.leftMargin + 310; boardY: UI.screenHeight-353; dockW: 90; dockH: 90
+        dockX: UI.leftMargin + 10; dockY:5; boardX: UI.leftMargin + 230; boardY: 95; dockW: 65; dockH: 65
     }
     Bit {
         source: "redfish_tail.png"
-        dockX: UI.leftMargin + 15; dockY: 110; boardX: UI.leftMargin + 604; boardY: UI.screenHeight-339; dockW: 90; dockH: 90
+        dockX: UI.leftMargin + 10; dockY: 80; boardX: UI.leftMargin + 453; boardY: 106; dockW: 65; dockH: 65
     }
     Bit {
         source: "redfish_head.png"
-        dockX: UI.leftMargin + 15; dockY: 210; boardX: UI.leftMargin + 171; boardY: UI.screenHeight-339; dockW: 90; dockH: 90
+        dockX: UI.leftMargin + 10; dockY: 155; boardX: UI.leftMargin + 128; boardY: 105; dockW: 65; dockH: 65
     }
     Bit {
         source: "redfish_tailsection.png"
-        dockX: UI.leftMargin + 15; dockY: 310; boardX: UI.leftMargin + 453; boardY: UI.screenHeight-352; dockW: 90; dockH: 90
+        dockX: UI.leftMargin + 10; dockY: 230; boardX: UI.leftMargin + 339; boardY: 96; dockW: 65; dockH: 65
     }
     Bit {
         source: "redfish_fin.png"
-        dockX: UI.leftMargin + 10; dockY: 410; boardX: UI.leftMargin + 430; boardY: UI.screenHeight-219; dockW: 100; dockH: 40
+        dockX: UI.leftMargin + 2; dockY: 305; boardX: UI.leftMargin + 322; boardY: 197; dockW: 100; dockH: 40
     }
 }

@@ -20,7 +20,7 @@ Board {
     }
     Bit {
         source: "simple_puppy_front.png"
-        dockX: UI.leftMargin + 20; dockY:275; boardX: UI.leftMargin + 291; boardY: 61; dockW: 68; dockH: 80
+        dockX: UI.leftMargin + 20; dockY:275; boardX: UI.leftMargin + 291; boardY: 60; dockW: 68; dockH: 80
         z: 3
     }
 

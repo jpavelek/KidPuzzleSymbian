@@ -3,26 +3,25 @@ import "UI.js" as UI
 
 Board {
     source: "aquarium2_board.png"
-
     Bit {
         source: "aquarium_1.png"
-        dockX: UI.leftMargin + 10; dockY:10; boardX: UI.leftMargin + 571; boardY: UI.screenHeight-316; dockW: 116; dockH: 80
+        dockX: UI.leftMargin + 10; dockY:5; boardX: UI.leftMargin + 132; boardY: 17; dockW: 80; dockH: 65
     }
     Bit {
         source: "aquarium_2.png"
-        dockX: UI.leftMargin + 10; dockY: 130; boardX: UI.leftMargin + 386; boardY: UI.screenHeight-437; dockW: 100; dockH: 33
+        dockX: UI.leftMargin + 5; dockY: 85; boardX: UI.leftMargin + 115; boardY: 177; dockW: 90; dockH: 40
     }
     Bit {
         source: "aquarium_3.png"
-        dockX: UI.leftMargin + 20; dockY: 210; boardX: UI.leftMargin + 459; boardY: UI.screenHeight-181; dockW: 79; dockH: 80
+        dockX: UI.leftMargin + 20; dockY: 145; boardX: UI.leftMargin + 272; boardY: 233; dockW: 65; dockH: 65
     }
     Bit {
         source: "aquarium_4.png"
-        dockX: UI.leftMargin + 20; dockY: 310; boardX: UI.leftMargin + 202; boardY: UI.screenHeight-427; dockW: 89; dockH: 80
+        dockX: UI.leftMargin + 10; dockY: 220; boardX: UI.leftMargin + 489; boardY: 193; dockW: 80; dockH: 65
     }
     Bit {
         source: "aquarium_5.png"
-        dockX: UI.leftMargin + 45; dockY: 410; boardX: UI.leftMargin + 229; boardY: UI.screenHeight-248; dockW: 44; dockH: 80
+        dockX: UI.leftMargin + 40; dockY: 290; boardX: UI.leftMargin + 371; boardY: 37; dockW: 30; dockH: 65
     }
 }
 

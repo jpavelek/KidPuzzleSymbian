@@ -25,13 +25,13 @@ function finished() {
 //Common
 var screenWidth = 640;
 var screenHeight = 360;
-var leftMargin = 40; //how  big margin for 800x480 game? On 854 screen it is 54
+var leftMargin = 40; //how  big margin for 800x480 game? On 854 screen it is 54, for Symbian 40
 
 //main grid
-var gridCellWidth = 350;
-var gridCellHeight = 200;
-var delegateWidth = 320;
-var delegateHeigh = 180;
+var gridCellWidth = 280;
+var gridCellHeight = 160;
+var delegateWidth = 256;
+var delegateHeigh = 144;
 
 //Game page
 var pickerBarWidth = 128;

@@ -15,6 +15,8 @@ symbian:TARGET.UID3 = 0xE115139C
 # 0x2002CCCF value if protected UID is given to the application
 symbian:DEPLOYMENT.installer_header = 0x2002CCCF
 
+#symbian:DEPLOYMENT.installer_header = 0xA000D7CE
+
 # Allow network access on Symbian
 symbian:TARGET.CAPABILITY += NetworkServices
 

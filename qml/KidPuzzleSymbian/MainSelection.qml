@@ -1,6 +1,5 @@
 import QtQuick 1.0
 import "UI.js" as UI
-import Qt.labs.particles 1.0
 
 Image {
     id: mainPage
@@ -8,26 +7,7 @@ Image {
     height: UI.screenHeight
     source: (Math.random() > 0.5) ? "bg2.png" : "bg1.png"
     opacity: 0.0
-    smooth: true
-/*
-    Particles {
-        y: 0
-        width: parent.width
-        source: "snowflake.png"
-        lifeSpan: 15000
-        count: 50
-        emissionRate: 5
-        angle: 70
-        angleDeviation: 36
-        velocity: 40
-        velocityDeviation: 15
-        ParticleMotionWander {
-            xvariance: 2
-            yvariance: 1
-            pace: 20
-        }
-    }
-*/
+
     Component {
         id: tilesGridDelegate
         Image {

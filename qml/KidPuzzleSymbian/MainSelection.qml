@@ -31,7 +31,7 @@ Image {
             }
             Text {
                 visible: false //FULLVERSION (buyTile == undefined) ? false : true
-                text: qsTr("Upgrade for $1.59")
+                text: qsTr("Upgrade for 2 EURO")
                 anchors { horizontalCenter: parent.horizontalCenter; verticalCenter: parent.verticalCenter }
                 font.pixelSize: 32
                 color: "black"

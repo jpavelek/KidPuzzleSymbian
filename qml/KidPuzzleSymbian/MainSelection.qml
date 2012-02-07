@@ -105,7 +105,21 @@ Image {
         cellHeight: UI.gridCellHeight
         flow: GridView.TopToBottom
         delegate: tilesGridDelegate
-        anchors { fill: parent; topMargin: 30; bottomMargin: 10; leftMargin: 20; rightMargin: 20 }
+        anchors { fill: parent; topMargin: 10; bottomMargin: 10; leftMargin: 20; rightMargin: 20 }
+    }
+    Image {
+        source: "close.png"
+        width: 64
+        height: 48
+        anchors { bottom: parent.bottom; right: parent.right }
+        MouseArea { anchors.fill: parent; onClicked: { Qt.quit() } }
+    }
+    Image {
+        source: isMuted ? "sound-off.png" : "sound-on.png"
+        width: 64
+        height: 48
+        anchors { bottom: parent.bottom; left: parent.left }
+        MouseArea { anchors.fill: parent; onClicked: { isMuted = !isMuted } }
     }
 
     Behavior on opacity {  PropertyAnimation { target: mainPage; property: "opacity"; duration: 300; easing.type: Easing.InOutQuad  } }

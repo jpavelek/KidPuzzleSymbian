@@ -65,7 +65,7 @@ Image {
             if (free) {
                 aBit.width = aBit.sourceSize.width
                 aBit.height = aBit.sourceSize.height
-                takeBit.play()
+                if (!isMuted) takeBit.play(); else console.log("takeBit.play muted")
                 aBit.z = aBit.z + 100
             }
         }
@@ -75,17 +75,17 @@ Image {
                 if (closeEnough(aBit.x, aBit.y, aBit.boardX, aBit.boardY)) {
                     free = false
                     blinkBit.running = true
-                    placeBit.play()
+                    if (!isMuted) placeBit.play(); else console.log("placeBit.play muted")
                     UI.bitDone()
                     aBit.x = boardX
                     aBit.y = boardY
                     drag.target = undefined
                     if (UI.finished()) {
-                        applause.play()
+                        if (!isMuted) applause.play(); else console.log("applause.play muted")
                         gameover = true
                     }
                 } else {
-                    returnBit.play()
+                    if (!isMuted) returnBit.play(); else console.log("returnBit.play muted")
                     aBit.width = dockW
                     aBit.height = dockH
                     aBit.x = dockX

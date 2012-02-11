@@ -31,6 +31,9 @@ MOBILITY += multimedia
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp
 
+DEPLOYMENT.display_name = Puzzle
+ICON = KidPuzzleSymbian.svg
+
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)
 qtcAddDeployment()

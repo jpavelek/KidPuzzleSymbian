@@ -14,10 +14,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     if (!settings.contains("muted")) {
         settings.setValue("muted", false);
     }
-/*
-    bool blahmuted;
-    viewer.rootContext()->setContextProperty("isMuted", &blahmuted);
-*/
+
     viewer.showExpanded();
 
     return app->exec();

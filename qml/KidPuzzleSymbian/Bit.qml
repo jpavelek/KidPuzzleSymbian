@@ -21,25 +21,6 @@ Image {
         }
     }
 
-
-    SoundEffect {
-        id: placeBit
-        source: "message.wav"; muted: isMuted; volume: 1.0
-    }
-    SoundEffect {
-        id: takeBit
-        source: "button-pressed.wav"; muted: isMuted; volume: 1.0
-    }
-    SoundEffect {
-        id: returnBit
-        source: "dialog-error.wav"; muted: isMuted; volume: 0.4
-    }
-    SoundEffect {
-        id: applause
-        source: "app-6.wav"; muted: isMuted; volume: 1.0
-    }
-
-
     Component.onCompleted: {
         width = dockW; height = dockH; x = dockX; y = dockY
         UI.addBit()

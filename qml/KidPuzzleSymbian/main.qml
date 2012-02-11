@@ -6,7 +6,7 @@ Rectangle {
     width: UI.screenWidth
     height: UI.screenHeight
     color: "black"
-    property bool isMuted: false
+    property bool isMuted: true //mute by default, it is just too loud on Symbian :(
 
     Loader {
         id: tileLoader

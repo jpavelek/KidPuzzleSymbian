@@ -47,14 +47,6 @@ Image {
             thumbnail: "redfish_thumbnail.png"
             boardEnabled: true
         }
-        /* FULLVERSION
-        ListElement {
-            tileComponent: "BuyFullVersion.qml"
-            thumbnail: "buy_full_version_thumbnail.png"
-            boardEnabled: true
-            buyTile: true
-        }
-        */
         ListElement {
             tileComponent: "BoardSimplePuppy.qml"
             thumbnail: "simple_puppy_thumbnail.png"
@@ -93,6 +85,11 @@ Image {
         ListElement {
             tileComponent: "BoardBBFish.qml"
             thumbnail: "bbfish_thumbnail.png"
+            boardEnabled: true
+        }
+        ListElement {
+            tileComponent: "BoardButterfly.qml"
+            thumbnail: "butterfly_thumbnail.png"
             boardEnabled: true
         }
     }

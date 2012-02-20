@@ -15,7 +15,7 @@ Image {
         onPressed: {
             baloon.visible = false
             timer.running = false
-            if (!isMuted) baloonPop.play(); else console.log("baloonPop.play muted")
+            if (!isMuted) baloonPop.play(); //else console.log("baloonPop.play muted")
         }
     }
     Timer {

@@ -6,17 +6,13 @@ DEPLOYMENTFOLDERS = folder_01
 # Additional import path used to resolve QML modules in Creator's code model
 QML_IMPORT_PATH =
 
-#symbian:TARGET.UID3 = 0xE115139C
-symbian:TARGET.UID3 = 0x2005e8dc
+VERSION = 1.1.1
 
-# Smart Installer package's UID
-# This UID is from the protected range and therefore the package will
-# fail to install if self-signed. By default qmake uses the unprotected
-# range value if unprotected UID is defined for the application and
-# 0x2002CCCF value if protected UID is given to the application
-symbian:DEPLOYMENT.installer_header = 0x2002CCCF
+symbian:TARGET.UID3 = 0xE115139C  #DEVEL
+#symbian:TARGET.UID3 = 0x2005e8dc
 
-#symbian:DEPLOYMENT.installer_header = 0xA000D7CE
+symbian:DEPLOYMENT.installer_header = 0xA000D7CE  #DEVEL
+#symbian:DEPLOYMENT.installer_header = 0x2002CCCF  #RELEASE
 
 # Allow network access on Symbian
 symbian {
@@ -36,11 +32,8 @@ symbian {
 CONFIG += mobility
 MOBILITY += multimedia
 
-# Add dependency to Symbian components
-# CONFIG += qt-components
-
-# The .cpp file which was generated for your project. Feel free to hack it.
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    datamover.cpp
 
 DEPLOYMENT.display_name = Puzzle
 ICON = KidPuzzleSymbian.svg
@@ -48,4 +41,10 @@ ICON = KidPuzzleSymbian.svg
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)
 qtcAddDeployment()
+
+HEADERS += \
+    datamover.h
+
+RESOURCES += \
+    translations/translations.qrc
 

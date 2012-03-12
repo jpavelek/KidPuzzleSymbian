@@ -6,7 +6,7 @@ DEPLOYMENTFOLDERS = folder_01
 # Additional import path used to resolve QML modules in Creator's code model
 QML_IMPORT_PATH =
 
-VERSION = 1.1.1
+VERSION = 1.2.0
 
 symbian:TARGET.UID3 = 0xE115139C  #DEVEL
 #symbian:TARGET.UID3 = 0x2005e8dc
@@ -30,6 +30,7 @@ symbian {
 # If your application uses the Qt Mobility libraries, uncomment the following
 # lines and add the respective components to the MOBILITY variable.
 CONFIG += mobility
+QT += phonon
 MOBILITY += multimedia
 
 SOURCES += main.cpp \

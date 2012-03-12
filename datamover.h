@@ -4,7 +4,9 @@
 #include <QObject>
 #include <QtDeclarative>
 #include <QSettings>
-
+#include <QWidget>
+#include <phonon/mediaobject.h>
+#include <phonon/audiooutput.h>
 
 class DataMover : public QObject
 {
@@ -19,6 +21,9 @@ public slots:
     void setReviewed(void);
 private:
     QSettings *settings;
+    Phonon::MediaObject *mMediaObject;
+    Phonon::AudioOutput *mAudioOutput;
+
 };
 
 #endif // DATAMOVER_H

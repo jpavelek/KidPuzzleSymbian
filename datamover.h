@@ -4,9 +4,6 @@
 #include <QObject>
 #include <QtDeclarative>
 #include <QSettings>
-#include <QWidget>
-#include <phonon/mediaobject.h>
-#include <phonon/audiooutput.h>
 
 class DataMover : public QObject
 {
@@ -19,11 +16,10 @@ signals:
 public slots:
     bool wasReviewed(void);
     void setReviewed(void);
+    void setMuted(bool);
+    bool getMuted(void);
 private:
     QSettings *settings;
-    Phonon::MediaObject *mMediaObject;
-    Phonon::AudioOutput *mAudioOutput;
-
 };
 
 #endif // DATAMOVER_H

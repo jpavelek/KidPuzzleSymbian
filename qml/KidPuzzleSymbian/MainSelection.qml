@@ -116,7 +116,7 @@ Image {
         width: 64
         height: 48
         anchors { bottom: parent.bottom; left: parent.left }
-        MouseArea { anchors.fill: parent; onClicked: { isMuted = !isMuted } }
+        MouseArea { anchors.fill: parent; onClicked: { isMuted = !isMuted; settingsObj.setMuted(isMuted) } }
     }
 
     Behavior on opacity {  PropertyAnimation { target: mainPage; property: "opacity"; duration: 300; easing.type: Easing.InOutQuad  } }

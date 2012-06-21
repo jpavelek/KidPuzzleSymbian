@@ -14,13 +14,6 @@ DataMover::DataMover(QObject *parent) :
     if (!settings->contains(DM_REVIEWED_KEY)) {
         settings->setValue(DM_REVIEWED_KEY, false); //Not reviewed by default
     }
-
-    mMediaObject = new Phonon::MediaObject(this);
-    mMediaObject->setCurrentSource(QString("message.wav") );
-    mAudioOutput = new Phonon::AudioOutput(Phonon::MusicCategory, this);
-    mAudioOutput->setVolume(0.5);
-
-    Phonon::createPath(mMediaObject, mAudioOutput);
 }
 
 void
@@ -33,8 +26,13 @@ DataMover::wasReviewed() {
     return settings->value(DM_REVIEWED_KEY).toBool();
 }
 
-
 void
-DataMover::playTake(void) {
-    mMediaObject->play();
+DataMover::setMuted(bool m) {
+    settings->setValue(DM_MUTED_KEY, m);
 }
+
+bool
+DataMover::getMuted(void) {
+    return settings->value(DM_MUTED_KEY).toBool();
+}
+
